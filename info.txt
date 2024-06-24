@@ -1,0 +1,19 @@
+* como compilar
+
+* openmp
+gcc -o <arquivo_saida>.exe <arquivo_entrada>.c -fopenmp
+
+===================================================================
+
+windows MPI
+
+* compilar
+
+    metodo 1: selecionar o arquivo .c, ir na aba "terminal" e selecionar a opção "run build task"
+
+    metodo 2: rodar no termional: gcc <arquivo.c> -I %MSMPI_INC% -L %MSMPI_LIB64% -lmsmpi -o out.exe
+
+* rodar: 
+    
+    mpiexec -n 4 out.exe
+
