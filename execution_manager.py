@@ -71,7 +71,9 @@ def main():
     # run_executions_v2(input_naive, output_file, combinations)
 
     # read_data(filename=output_file)
-    calculate_metrics(output_file)
+    # calculate_metrics(output_file)
+
+    read_data(output_file)
 
 
 if __name__ == "__main__":
