@@ -68,12 +68,12 @@ def main():
     combinations = [(n, thread) for n in nums for thread in threads]
 
     # run_executions(input_naive, output_file, threads, nums)
-    # run_executions_v2(input_naive, output_file, combinations)
+    run_executions_v2(input_naive, output_file, combinations)
 
     # read_data(filename=output_file)
-    # calculate_metrics(output_file)
+    calculate_metrics(output_file)
 
-    read_data(output_file)
+    # read_data(output_file)
 
 
 if __name__ == "__main__":
