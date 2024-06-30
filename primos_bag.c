@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
         n = strtol(argv[1], (char **) NULL, 10);
         num_threads = strtol(argv[2], (char **) NULL, 10);
     }
-
+    omp_set_num_threads(num_threads);
     // Registra o tempo inicial de execução do programa
     t_inicial = omp_get_wtime();
 
